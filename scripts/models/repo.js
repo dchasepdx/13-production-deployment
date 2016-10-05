@@ -5,7 +5,7 @@
 
   reposObj.requestRepos = function(callback) {
     // TODO: refactor this request into an $.ajax call
-    $.ajax('/github/users/codefellows-portland-301d6/repos' +
+    $.ajax('/github/users/risafletcher/repos' +
           '?per_page=10&sort=updated', {
             method: 'GET',
           })
