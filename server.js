@@ -15,7 +15,7 @@ function proxyGitHub(request, response) {
     headers: {
       Authorization: 'token ' + process.env.GITHUB_TOKEN
     }
-  }));
+  }))(request, response);
 }
 
 app.use(express.static('./'));
